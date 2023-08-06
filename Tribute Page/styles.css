@@ -1,0 +1,42 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+#title {
+    text-align: center;
+}
+#main > div {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+}
+#img-caption {
+    text-align: center;
+}
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    width: 50% !important;
+}
+#tribute-info > ul > li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#tribute-info {
+    background-color: #eeeeee;
+}
+#image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

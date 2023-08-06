@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 id="title">Shop Survey Form</h1>
+        <p id="description">Unleash the Shopper in You: Share Your Thoughts with Our Shop Survey Form!</p>
+    </div>
+    <div class="container">
+        <form id="survey-form">
+            <div class="row">
+                <div class="col-6">
+                    <label for="name" class="form-label" id="name-label">Name <span style="color: red;">*</span></label>
+                    <input type="text" class="form-control" placeholder="Enter your full name" id="name" required>
+                </div>
+                <div class="col-6">
+                    <label for="email" class="form-label" id="email-label">Email address <span style="color: red;">*</span></label>
+                    <input type="email" class="form-control" placeholder="Enter your email" id="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 mt-auto">
+                    <label for="number" class="form-label" id="number-label">Age<span style="font-weight: 100;color: #626262;">(optional)</span></label>
+                    <input type="number" min="10" max="99" class="form-control" placeholder="Enter your age" id="number">
+                </div>
+                <div class="col-4 mt-auto">
+                    <select class="form-select" id="dropdown" aria-label="Gender">
+                        <option selected>Select your gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="R">Rahter not say</option>
+                        <option value="O">Other</option>
+                    </select>
+                </div>
+                <div class="col-4 mt-auto mx-auto">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="registered">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Registered Customer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked value="unregistered">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Unregistered Customer
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="experienceAssessment">
+                <h4>Store Experience Assessment</h4>
+
+                <div class="checks">
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="productQuality" id="productQuality">
+                            <label class="form-check-label" for="productQuality">
+                                Product Quality
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="customerService" id="customerService">
+                            <label class="form-check-label" for="customerService">
+                                Customer Service
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="pricingDiscounts" id="pricingDiscounts">
+                            <label class="form-check-label" for="pricingDiscounts">
+                                Pricing and Discounts
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="storeAmbiance" id="storeAmbiance">
+                            <label class="form-check-label" for="storeAmbiance">
+                                Store Ambiance
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="cleanlinessHygiene" id="cleanlinessHygiene">
+                            <label class="form-check-label" for="cleanlinessHygiene">
+                                Cleanliness and Hygiene
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="storeLayoutNavigation" id="storeLayoutNavigation">
+                            <label class="form-check-label" for="storeLayoutNavigation">
+                                Store Layout and Navigation
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="staffKnowledge" id="staffKnowledge">
+                            <label class="form-check-label" for="staffKnowledge">
+                                Staff Knowledge and Helpfulness
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="availabilityOfHelp" id="availabilityOfHelp">
+                            <label class="form-check-label" for="availabilityOfHelp">
+                                Availability of Help
+                            </label>
+                        </div>
+
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="productVariety" id="productVariety">
+                            <label class="form-check-label" for="productVariety">
+                                Product Variety
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="availabilityOfStock" id="availabilityOfStock">
+                            <label class="form-check-label" for="availabilityOfStock">
+                                Availability of Stock
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="onlineShoppingExperience" id="onlineShoppingExperience">
+                            <label class="form-check-label" for="onlineShoppingExperience">
+                                Online Shopping Experience
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="websiteNavigation" id="websiteNavigation">
+                            <label class="form-check-label" for="websiteNavigation">
+                                Website Navigation
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="paymentOptions" id="paymentOptions">
+                            <label class="form-check-label" for="paymentOptions">
+                                Payment Options
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="returnExchangePolicy" id="returnExchangePolicy">
+                            <label class="form-check-label" for="returnExchangePolicy">
+                                Return and Exchange Policy
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="loyaltyProgramsRewards" id="loyaltyProgramsRewards">
+                            <label class="form-check-label" for="loyaltyProgramsRewards">
+                                Loyalty Programs and Rewards
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="storeLocationParking" id="storeLocationParking">
+                            <label class="form-check-label" for="storeLocationParking">
+                                Store Location and Parking
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <input class="form-check-input" type="checkbox" name="StoreExperienceAssessment"
+                                value="accessibilityForCustomers" id="accessibilityForCustomers">
+                            <label class="form-check-label" for="accessibilityForCustomers">
+                                Accessibility for Customers
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">comments</span>
+                <textarea class="form-control" aria-label="comments"></textarea>
+              </div>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+    text-align: center;
+}
+
+.container {
+    /* width: auto !important; */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+}
+
+.experienceAssessment {
+    padding: 20px;
+}
+
+#survey-form>div.row>div.col-4.mt-auto.mx-auto {
+    width: fit-content;
+}
+
+.checks {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#survey-form>div.experienceAssessment>div>div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

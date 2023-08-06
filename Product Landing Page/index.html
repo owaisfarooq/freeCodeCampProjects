@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="row">
+            <div class="col-2"><img
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                    id="header-img" alt="" srcset=""></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="btn nav-link" id="nav-link" href="#Features">Features</a></li>
+                        <li><a class="btn nav-link" id="nav-link" href="#How_It_Works">How It Works</a></li>
+                        <li><a class="btn nav-link" id="nav-link" href="#Pricing">Pricing</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form action="https://www.freecodecamp.com/email-submit" method="POST" enctype="text/plain" id="form" name="EmailForm">
+                <h3>Handcrafted, home-made masterpieces</h3>
+                <div>
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" id="email" required>
+                    <input type="submit" id="submit" value="Send" class="btn btn-primary">submit</input>
+                </div>
+            </form>
+        </section>
+        <section id="Features">
+            <div class="row">
+                <div class="col-3"><i class="fa fa-3x fa-fire"></i></div>
+                <div class="col-9">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><i class="fa fa-3x fa-truck"></i></div>
+                <div class="col-9">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><i class="fa fa-3x fa-battery-full"></i></div>
+                <div class="col-9">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+        <section id="How_It_Works">
+            <div>
+                <iframe id="video" class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section id="Pricing">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <h5>TENOR TROMBONE</h5>
+                        <h3 class="price">$600</h3>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="btn btn-primary">select</input>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h5>BASS TROMBONE</h5>
+                        <h3 class="price">$900</h3>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="btn btn-primary">select</input>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h5>VALVE TROMBONE</h5>
+                        <h3 class="price">$1200</h3>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="btn btn-primary">select</input>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
